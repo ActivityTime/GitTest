@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,7 @@ public class UsersController {
 	@RequestMapping("show-source")
 	@ResponseBody
 	public List<User> defaultWay() {
+		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
 		return usersServiceImpl.show();
 	}
 }
