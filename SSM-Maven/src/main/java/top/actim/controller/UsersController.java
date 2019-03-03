@@ -28,13 +28,6 @@ public class UsersController {
 	@ResponseBody
 	public List<User> defaultWay() { 
 		Logger.getLogger(this.getClass()).info("ResponseBody-Mars2");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy");
 		return usersServiceImpl.show();
 	}
 }
