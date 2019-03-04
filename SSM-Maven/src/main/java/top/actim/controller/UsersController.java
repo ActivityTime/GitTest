@@ -27,7 +27,7 @@ public class UsersController {
 	@RequestMapping("show-source")
 	@ResponseBody
 	public List<User> defaultWay() {
-		Logger.getLogger(this.getClass()).info("ResponseBody-Oxy test 01");
+		Logger.getLogger(this.getClass()).info("ResponseBody-Mar2 test 02");
 		return usersServiceImpl.show();
 	}
 }
